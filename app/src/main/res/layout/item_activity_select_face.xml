@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:id="@+id/face_img"
+    android:background="@mipmap/select_btn"
+    android:scaleType="centerCrop"
+    android:padding="3dp"
+    android:src="@color/colorPrimary"
+    android:layout_height="94dp"/>

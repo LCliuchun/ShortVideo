@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/parent_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/back_activity"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_back"
+            android:gravity="center"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/background_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@mipmap/icon_music"
+                android:layout_width="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音乐"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mul_mix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@mipmap/icon_yinliang"
+                android:layout_width="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="声音"
+                android:textColor="#fff" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="128dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/filter_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@mipmap/icon_lvjing"
+                android:layout_width="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="滤镜"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="184dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/clip_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@mipmap/icon_fengmian"
+                android:layout_width="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="封面"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/up_load"
+            android:layout_marginBottom="56dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="194dp"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:background="@mipmap/xiayibu02"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="54dp"
+                android:src="@mipmap/icon_fabu"
+                android:layout_width="21dp"
+                android:layout_height="21dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="发布视频"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_reycler"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:visibility="gone" />
+<!--    <HorizontalScrollView
+        android:fillViewport="true"
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>-->
+</RelativeLayout>

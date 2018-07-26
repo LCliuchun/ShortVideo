@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VideoRecordDemo</string>
+    <string name="speed_super_slow">极慢"</string>
+    <string name="speed_slow">慢"</string>
+    <string name="speed_normal">正常"</string>
+    <string name="speed_fast">快"</string>
+    <string name="speed_super_fast">极快"</string>
+</resources>
