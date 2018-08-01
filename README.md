@@ -9,7 +9,7 @@
 
 # [apk下载](https://fir.im/gmh8)
 
-扫二维码![](https://github.com/lgshuo/ShortVideo/blob/master/pic/record.gif)
+扫二维码![](https://github.com/lgshuo/ShortVideo/blob/master/pic/down.png)
 
 
 
