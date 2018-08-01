@@ -132,9 +132,10 @@ public class VideoPlayerDemoActivity2 extends BaseVideoActivity  {
     }
 
     private void loadMore() {
-        String url = "";        //公司url不方便透露,请见谅
+        String url = "http://39.105.77.233:8080/mitanapi/index/hotList";        //公司url不方便透露,请见谅
         HashMap<String, String> hashMap = new HashMap();
         hashMap.put("page", page + "");
+        hashMap.put("user_uid", "mtc9cd4b516eaf297f8af3f2791f1428ce");
         hashMap.put("app_flag", "mt");
         mHttpPostRequest.requestPost(url, hashMap, new OnRequestListener() {
             @Override
